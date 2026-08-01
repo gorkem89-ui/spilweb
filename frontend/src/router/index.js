@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import MainLayout from '../components/layout/MainLayout.vue';
 import AdminLayout from '../components/admin/AdminLayout.vue';
 import PortalLayout from '../components/portal/PortalLayout.vue';
@@ -238,7 +238,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory('/spilweb/'),
   routes,
   scrollBehavior: () => ({ top: 0 })
 });
